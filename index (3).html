@@ -1,0 +1,411 @@
+<!--Elabore um algoritmo que leia um número e, se ele for maior do que 20, imprimir a metade desse número.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 1</title>
+</head>
+<body>
+  <script>
+    const numero = Number(prompt("Digite um número:"));
+
+    if (numero > 20) {
+      const metade = numero / 2;
+      alert("A metade do número é: " + metade);
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo para testar se uma senha digitada é igual a "Patinho Feio". Se a senha estiver correta, escreva "Acesso permitido"; caso contrário, emita a mensagem "Você não tem acesso ao sistema".
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 2</title>
+</head>
+<body>
+  <script>
+    const senha = prompt("Digite a senha:");
+
+    if (senha === "Patinho Feio") {
+      alert("Acesso permitido");
+    } else {
+      alert("Você não tem acesso ao sistema");
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que leia dois números inteiros e efetue a adição; caso o resultado seja maior que 10, imprima-o.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 3</title>
+</head>
+<body>
+  <script>
+    const numero1 = parseInt(prompt("Digite o primeiro número:"));
+    const numero2 = parseInt(prompt("Digite o segundo número:"));
+    const resultado = numero1 + numero2;
+
+    if (resultado > 10) {
+      alert("O resultado da adição é: " + resultado);
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que indique se um número digitado está compreendido entre 20 e 90, ou não
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 4</title>
+</head>
+<body>
+  <script>
+    const numero = Number(prompt("Digite um número:"));
+
+    if (numero >= 20 && numero <= 90) {
+      alert("O número está compreendido entre 20 e 90.");
+    } else {
+      alert("O número NÃO está compreendido entre 20 e 90.");
+    }
+  </script>
+</body>
+</html>
+
+
+<!--Elabore um algoritmo que leia dois números e imprima o maior número.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 5</title>
+</head>
+<body>
+  <script>
+    const numero1 = Number(prompt("Digite o primeiro número:"));
+    const numero2 = Number(prompt("Digite o segundo número:"));
+
+    if (numero1 > numero2) {
+      alert("O maior número é: " + numero1);
+    } else if (numero2 > numero1) {
+      alert("O maior número é: " + numero2);
+    } else {
+      alert("Os números são iguais.");
+    }
+  </script>
+</body>
+</html>
+
+
+<!--Elabore um algoritmo que leia dois números e imprima qual é maior e qual é menor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 6</title>
+</head>
+<body>
+  <script>
+    const numero1 = Number(prompt("Digite o primeiro número:"));
+    const numero2 = Number(prompt("Digite o segundo número:"));
+
+    if (numero1 > numero2) {
+      alert(numero1 + " é maior que " + numero2);
+    } else if (numero2 > numero1) {
+      alert(numero2 + " é maior que " + numero1);
+    } else {
+      alert("Os números são iguais.");
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que leia três números e imprima o menor número..
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 7</title>
+</head>
+<body>
+  <script>
+    const numero1 = Number(prompt("Digite o primeiro número:"));
+    const numero2 = Number(prompt("Digite o segundo número:"));
+    const numero3 = Number(prompt("Digite o terceiro número:"));
+
+    let menor = numero1;
+
+    if (numero2 < menor) {
+      menor = numero2;
+    }
+
+    if (numero3 < menor) {
+      menor = numero3;
+    }
+
+    alert("O menor número é: " + menor);
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que leia três números e imprima-os em ordem crescente..
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 8</title>
+</head>
+<body>
+  <script>
+    const numero1 = Number(prompt("Digite o primeiro número:"));
+    const numero2 = Number(prompt("Digite o segundo número:"));
+    const numero3 = Number(prompt("Digite o terceiro número:"));
+
+    const numerosOrdenados = [numero1, numero2, numero3].sort((a, b) => a - b);
+
+    alert("Números em ordem crescente: " + numerosOrdenados.join(", "));
+  </script>
+</body>
+</html>
+
+<!-- Elabore um algoritmo que leia o nome e o peso de duas pessoas e imprima o nome da pessoa mais gorda...
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 10</title>
+</head>
+<body>
+  <script>
+    const nome1 = prompt("Digite o nome da primeira pessoa:");
+    const peso1 = parseFloat(prompt("Digite o peso da primeira pessoa:"));
+
+    const nome2 = prompt("Digite o nome da segunda pessoa:");
+    const peso2 = parseFloat(prompt("Digite o peso da segunda pessoa:"));
+
+    if (peso1 > peso2) {
+      alert(nome1 + " é a pessoa mais gorda.");
+    } else if (peso2 > peso1) {
+      alert(nome2 + " é a pessoa mais gorda.");
+    } else {
+      alert("As pessoas têm o mesmo peso.");
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que leia um número e imprima se ele é par ou ímpar. Obs: Para o número ser par, o resto de sua divisão por dois deve ser zero...
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 11</title>
+</head>
+<body>
+  <script>
+    const numero = Number(prompt("Digite um número:"));
+
+    if (numero % 2 === 0) {
+      alert(numero + " é um número par.");
+    } else {
+      alert(numero + " é um número ímpar.");
+    }
+  </script>
+</body>
+</html>
+
+<!--Elabore um algoritmo que leia um número e imprima uma das mensagens: é múltiplo de 3, ou, não é múltiplo de 3...
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 12</title>
+</head>
+<body>
+  <script>
+    const numero = parseInt(prompt("Digite um número:"));
+
+    if (numero % 3 === 0) {
+      alert(numero + " é múltiplo de 3.");
+    } else {
+      alert(numero + " não é múltiplo de 3.");
+    }
+  </script>
+</body>
+</html>
+
+<!--Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido...
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 13</title>
+</head>
+<body>
+  <script>
+    let nota = -1;
+
+    while (nota < 0 || nota > 10) {
+      nota = parseFloat(prompt("Digite uma nota entre 0 e 10:"));
+
+      if (isNaN(nota) || nota < 0 || nota > 10) {
+        alert("Valor inválido! Digite novamente.");
+      }
+    }
+
+    alert("A nota informada é: " + nota);
+  </script>
+</body>
+</html>
+
+
+<!--Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações...
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 14</title>
+</head>
+<body>
+  <script>
+    let nomeUsuario = prompt("Digite o nome de usuário:");
+    let senha = prompt("Digite a senha:");
+
+    while (senha === nomeUsuario) {
+      alert("Erro: a senha não pode ser igual ao nome de usuário!");
+      senha = prompt("Digite a senha novamente:");
+    }
+
+    alert("Cadastro realizado com sucesso!");
+  </script>
+</body>
+</html>
+
+<!--15. Faça um programa que leia e valide as seguintes informações:
+Nome: maior que 3 caracteres;
+Idade: entre 0 e 150;
+Salário: maior que zero;
+Sexo: 'f' ou 'm';
+Estado Civil: 's', 'c', 'v', 'd';
+..
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 15</title>
+</head>
+<body>
+  <script>
+    let nome = "";
+
+    while (nome.length <= 3) {
+      nome = prompt("Digite o nome (maior que 3 caracteres):");
+    }
+
+    let idade = -1;
+
+    while (idade < 0 || idade > 150) {
+      idade = parseInt(prompt("Digite a idade (entre 0 e 150):"));
+
+      if (isNaN(idade) || idade < 0 || idade > 150) {
+        alert("Idade inválida! Digite novamente.");
+      }
+    }
+
+    let salario = 0;
+
+    while (salario <= 0) {
+      salario = parseFloat(prompt("Digite o salário (maior que zero):"));
+
+      if (isNaN(salario) || salario <= 0) {
+        alert("Salário inválido! Digite novamente.");
+      }
+    }
+
+    let sexo = "";
+
+    while (sexo !== "f" && sexo !== "m") {
+      sexo = prompt("Digite o sexo ('f' ou 'm'):");
+    }
+
+    let estadoCivil = "";
+
+    while (!["s", "c", "v", "d"].includes(estadoCivil)) {
+      estadoCivil = prompt("Digite o estado civil ('s', 'c', 'v' ou 'd'):");
+    }
+
+    alert("Cadastro realizado com sucesso!");
+  </script>
+</body>
+</html>
+
+<!--Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro...
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 16</title>
+</head>
+<body>
+  <script>
+    // Imprimir os números um abaixo do outro
+    for (let i = 1; i <= 20; i++) {
+      console.log(i);
+    }
+
+    // Imprimir os números um ao lado do outro
+    let numeros = "";
+
+    for (let i = 1; i <= 20; i++) {
+      numeros += i + " ";
+    }
+
+    console.log(numeros);
+  </script>
+</body>
+</html>
+<!--Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50....
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 17</title>
+</head>
+<body>
+  <script>
+    for (let i = 1; i <= 50; i++) {
+      if (i % 2 !== 0) {
+        console.log(i);
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!--Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.....
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercício 18</title>
+</head>
+<body>
+  <script>
+    const numero1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+    const numero2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+    console.log("Números no intervalo:");
+    for (let i = numero1; i <= numero2; i++) {
+      console.log(i);
+    }
+  </script>
+</body>
+</html>
